@@ -76,11 +76,11 @@ export default function App() {
 				setTime(data.hourly.time);
 				setTemp(data.hourly.temperature_2m);
 				setCurrentTemp(currentData.current_weather.temperature);
-				Keyboard.dismiss();
 			} catch (error) {
 				setError(error);
 			}
 		};
+		Keyboard.dismiss();
 		init();
 	};
 
